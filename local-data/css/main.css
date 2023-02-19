@@ -1,4 +1,4 @@
-button{width:120px;padding:10px 25px;background-color:#00ffff;border:none;color:#222;cursor:pointer;}
+/* button{width:120px;padding:10px 25px;background-color:#00ffff;border:none;color:#222;cursor:pointer;} */
 button:hover{background-color:tan;color:#fff;cursor:pointer;}
 
-.btn{width:150px;margin-bottom:0;background-color: #000;color:#fff;}
+.btn{width:150px;margin-bottom:0;background-color: #222;color:#fff;}

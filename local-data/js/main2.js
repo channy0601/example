@@ -12,5 +12,41 @@ window.onload = () => {
         const getData = localStorage.getItem('background-color');
         console.log(getData);
 
+        //키(key) 만 출력하기
+        console.log(localStorage.key(0));
+
+        console.log(localStorage.length);
+   
+
+        let ar = new Array();
+        let result = "";
+
+        ar.push({name:'홍길동',email:'1@hong.com',age:'22',pastime:'hi'});
+        ar.push({name:'홍길',email:'2@hong.com',age:'22',pastime:'hi'});
+        ar.push({name:'홍',email:'3@hong.com',age:'22',pastime:'hi'});
+        ar.push({name:'동',email:'4@hong.com',age:'22',pastime:'hi'});
+        ar.push({name:'길동',email:'5@hong.com',age:'22',pastime:'hi'});
+
+        console.log(ar[0].name);
+        console.log(ar[0].email);
+        console.log(ar[0].age);
+        console.log(ar[0].pastime);
+
+        for(const i in ar){
+            // console.log(i);
+            result+='<tr>';
+            result+='<td>'+ar[i].name+'</td>';
+            result+='<td>'+ar[i].email+'</td>';
+            result+='<td>'+ar[i].age+'</td>';
+            result+='<td>'+ar[i].pastime+'</td>';
+            result+='</tr>';
+        }
+        console.log(result);
+
+        let hTody = document.getElementById('htmlTbody');
+        console.log(hTody);
+
+        //Append
+        $('#htmlTbody').append('result');
     });
 }
