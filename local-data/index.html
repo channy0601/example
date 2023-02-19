@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h3 style="text-align:center;padding-top:50px;">
+            Local Data
+            <small class="text-muted">with localStorage - set , get</small>
+        </h3>
+        <br>
+        
+        <table class="table table-bordered table-striped table-dark table-hover">
+            <caption>local Storage</caption>
+            <thead class="text-center">
+                <tr>
+                    <th>Local Storage Method</th>
+                    <th>input</th>
+                    <th>button</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+                <tr>
+                    <td style="vertical-align:middle;">로컬데이터에 저장하기</td>
+                    <td style="vertical-align:middle;"><input type="text"></td>
+                    <td><button class="btnSetLocalData">set Data</button></td>
+                </tr>
+                <tr>
+                    <td style="vertical-align:middle;">로컬데이터에 가져오기</td>
+                    <td style="vertical-align:middle;">위에표시</td>
+                    <td><button class="btnGetLocalData">Get Data</button></td>
+                </tr>
+                <tr>
+                    <td style="vertical-align:middle;">로컬데이터에 삭제하기</td>
+                    <td style="vertical-align:middle;">-</td>
+                    <td><button class="btnRemoveLocalData">Remove</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
